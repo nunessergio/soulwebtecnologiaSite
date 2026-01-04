@@ -151,22 +151,26 @@
                         <p>Estamos prontos para levar sua empresa ao próximo nível.</p>
                         <ul>
                             <li><i class="fas fa-envelope"></i> contato@soulwebtecnologia.com.br</li>
-                            <li><i class="fas fa-phone"></i> (71) 98775-2612</li>
+                            <!-- <li><i class="fas fa-phone"></i> (71) 98775-2612</li> -->
                             <li><i class="fas fa-map-marker-alt"></i> Salvador, BA</li>
                         </ul>
                     </div>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/smsn1971@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Novo contato via Site Soulweb">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
                         <div class="form-group">
-                            <input type="text" placeholder="Nome" required>
+                            <input type="text" name="nome" placeholder="Nome" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="E-mail" required>
+                            <input type="email" name="email" placeholder="E-mail" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Assunto">
+                            <input type="text" name="assunto" placeholder="Assunto">
                         </div>
                         <div class="form-group">
-                            <textarea rows="5" placeholder="Mensagem" required></textarea>
+                            <textarea rows="5" name="mensagem" placeholder="Mensagem" required></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-100">Enviar Mensagem</button>
                     </form>
