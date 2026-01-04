@@ -155,10 +155,13 @@
                             <li><i class="fas fa-map-marker-alt"></i> Salvador, BA</li>
                         </ul>
                     </div>
-                    <form class="contact-form" action="https://formsubmit.co/smsn1971@gmail.com" method="POST">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/smsn1971@gmail.com"
+                        method="POST">
                         <input type="hidden" name="_subject" value="Novo contato via Site Soulweb">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_captcha" value="false">
+
+                        <div id="form-message" style="display:none; margin-bottom: 15px;"></div>
 
                         <div class="form-group">
                             <input type="text" name="nome" placeholder="Nome" required>
